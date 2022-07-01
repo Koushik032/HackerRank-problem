@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define max 10000
+int main()
+{
+char ch;
+char s[max];
+char s1[max];
+
+scanf("%c",&ch);
+scanf("%s",&s);
+scanf(" %[^\n]",&s1);
+
+
+printf("%c\n%s\n",ch,s);
+puts(s1);
+
+    return 0;
+}
