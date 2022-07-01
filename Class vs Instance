@@ -1,0 +1,65 @@
+#include<stdio.h>
+#define max 1000
+int main()
+{
+    int t,i;
+    int a[max];
+
+    scanf("%d",&t);
+
+    for(i=0;i<t;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    for(i=0;i<t;i++)
+    {
+        if(a[i] < 0)
+        {
+            printf("Age is not valid, setting age to 0.\n");
+
+            if(a[i]+3 < 13)
+            {
+                printf("You are young.\nYou are young.\n\n");
+            }
+        }
+        else if(a[i]<13)
+        {
+            printf("You are young.\n");
+
+            if(a[i]+3<13)
+            {
+                printf("You are young.\n\n");
+            }
+            else if(a[i]+3>=13 && a[i]+3<18)
+            {
+                printf("You are a teenager.\n\n");
+            }
+        }
+        else if(a[i]>=13 && a[i]<18)
+        {
+            printf("You are a teenager.\n");
+
+            if(a[i]+3<18)
+            {
+                printf("You are a teenager.\n\n");
+            }
+            else if(a[i]+3>=18)
+            {
+                printf("You are old.\n\n");
+            }
+        }
+
+        else if(a[i]>=18)
+        {
+            printf("You are old.\n");
+
+            if(a[i]+3>=18)
+            {
+                printf("You are old.\n\n");
+            }
+        }
+    }
+
+    return 0;
+}
