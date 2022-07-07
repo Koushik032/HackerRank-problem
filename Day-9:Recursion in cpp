@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int factorial(int t)
+{
+    if(t==1)
+    {
+        return 1;
+    }
+    else
+    {    
+         return t*factorial(t-1);
+    }
+}
+int main()
+{
+    int n;
+    
+    cin >> n;
+    
+    int result=factorial(n);
+    
+    cout<< result;
+    return 0;
+}
